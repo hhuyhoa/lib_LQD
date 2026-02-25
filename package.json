@@ -9,21 +9,21 @@
     "build": "vite build",
     "preview": "vite preview",
     "electron:dev": "npm run build && electron .",
-    "dist:win": "npm run build && electron-builder --win nsis"
+    "dist:win": "npm run build && electron-builder --win nsis --publish never"
   },
   "dependencies": {
-    "react-dom": "^19.2.4",
-    "react": "^19.2.4",
+    "@google/genai": "^1.40.0",
     "lucide-react": "^0.563.0",
-    "@google/genai": "^1.40.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0",
     "electron": "^37.0.0",
-    "electron-builder": "^26.0.0"
+    "electron-builder": "^26.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   },
   "build": {
     "appId": "com.huyhoa.liblequydon",
@@ -36,7 +36,9 @@
       "electron-main.cjs"
     ],
     "win": {
-      "target": ["nsis"]
+      "target": [
+        "nsis"
+      ]
     }
   }
 }
