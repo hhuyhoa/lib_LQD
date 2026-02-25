@@ -1,0 +1,7 @@
+{
+  "name": "Library Book Lê Quý Đôn",
+  "description": "A robust web application for library cataloging with AI-powered OCR metadata extraction, supporting multi-person entry and export/import via Excel/CSV.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
